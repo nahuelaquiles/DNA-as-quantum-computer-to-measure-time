@@ -38,15 +38,15 @@ noise_amplitude = 0.05  # Amplitude of Gaussian noise (experiment with values li
 
 # Provided DNA sequence and complementary sequence
 sequence = (
-    "AGCTGTCGATCGTACGGTACGTTAGGCTAGCTTACGATCGTAGCTGATCGTTAGCTGATCGTAGCATGCTAGCATCGTAGCTACGATCGTAGCTAGCTGATCGTACGTAGCTAGCTAGCATGCGTAGCTAGCTACGTACGATGCGTAGCTACGTACGTAGCATCGTAGCTAGCATCGTAGCTAGCTAGCTAGCTAGCATC"
+    "INSERT HERE YOUR SEQUENCE"
 )
 complementary_sequence = sequence.translate(str.maketrans('ATCG', 'TAGC'))
 
 # Split the sequences into non-coding (first 100 bp) and coding (last 100 bp)
 non_coding_sequence = sequence[:100]
 non_coding_complement = complementary_sequence[:100]
-coding_sequence = sequence[100:]
-coding_complement = complementary_sequence[100:]
+coding_sequence = sequence[101:]
+coding_complement = complementary_sequence[101:]
 
 # Potential parameters for hydrogen bonds
 potential_params = {
